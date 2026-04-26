@@ -1,0 +1,45 @@
+{
+  "name": "@thsky-21/prompt-guard",
+  "version": "1.0.0",
+  "description": "Zero-dependency prompt injection detection for LLM applications. Works in Node.js, Edge runtimes, and browsers.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npx ts-node src/index.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "prompt-injection",
+    "llm-security",
+    "ai-security",
+    "prompt-guard",
+    "jailbreak-detection",
+    "llm-middleware",
+    "openai-security",
+    "anthropic-security",
+    "ai-safety",
+    "prompt-attack",
+    "owasp-llm"
+  ],
+  "author": "thsky-21",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
